@@ -1,0 +1,189 @@
+/* Pengaturan dasar */
+body {
+    font-family: 'Lato', sans-serif;
+    margin: 0;
+    background-color: #f5e3d6;
+    color: #1f2937;
+    line-height: 1.7;
+}
+
+/* Bagian header */
+header {
+    background: linear-gradient(135deg, #7f1d1d, #ec4343);
+    color: white;
+    text-align: center;
+    padding: 60px 20px;
+}
+
+header h1 {
+    font-family: 'DM Serif Display', serif;
+    margin: 10px;
+    font-size: 48px;
+    letter-spacing: 3px;
+    font-weight: normal;
+}
+
+header p {
+    font-size: 19px;
+    margin: 0;
+    color: #fff1e6;
+}
+
+/* Bagian navigasi*/
+nav {
+    background-color: #7f1d1d;
+    text-align: center;
+    padding: 12px;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 14px;
+    font-weight: bold;
+    padding-bottom: 4px;
+    border-bottom: 2px solid transparent;
+    transition: 0.2s;
+}
+
+nav a:hover {
+    color: #f97316;
+    border-bottom-color: #f97316;
+}
+
+/* Bagian utama */
+main {
+    max-width: 900px;
+    margin: -25px auto 30px;
+    padding: 0 15px;
+}
+
+section {
+    background-color: white;
+    margin-bottom: 30px;
+    padding: 25px 30px;
+    border-radius: 14px;
+    border-top: 6px solid #f97316;
+    box-shadow: 0 6px 18px rgba(127, 29, 29, 0.18);
+    scroll-margin-top: 70px;
+}
+
+/* Judul setiap bagian */
+h2 {
+    font-family: 'DM Serif Display', serif;
+    font-weight: normal;
+    font-size: 28px;
+    color: #7f1d1d;
+    border-bottom: 3px solid #f97316;
+    display: inline-block;
+    padding-bottom: 6px;
+}
+
+/* Daftar program belajar */
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    background-color: #fdf6f0;
+    margin: 10px 0;
+    padding: 12px 16px;
+    border-left: 5px solid #f97316;
+    border-radius: 6px;
+}
+
+/* Bagian paket dan jadwal */
+.paket-container,
+.jadwal-container {
+    display: flex;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.paket-card,
+.jadwal-card {
+    flex: 1;
+    background-color: #fff1e6;
+    padding: 24px 12px;
+    border-radius: 12px;
+    text-align: center;
+    border-top: 5px solid #f97316;
+    transition: 0.25s;
+}
+
+.paket-card:hover,
+.jadwal-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.15);
+}
+
+.paket-card h3,
+.jadwal-card h3 {
+    color: #7f1d1d;
+    margin-top: 0;
+}
+
+.paket-card p,
+.jadwal-card p {
+    margin: 4px 0;
+}
+
+/* Harga dibuat lebih menonjol */
+.paket-card p:first-of-type {
+    font-size: 24px;
+    font-weight: bold;
+    color: #b91c1c;
+    margin: 5px 0;
+}
+
+/* Tombol kontak */
+.btn-kontak {
+    display: inline-block;
+    background-color: #f97316;
+    color: white;
+    text-decoration: none;
+    padding: 12px 22px;
+    border-radius: 8px;
+    margin-top: 10px;
+    font-weight: bold;
+    transition: 0.2s;
+}
+
+.btn-kontak:hover {
+    background-color: #7f1d1d;
+}
+
+/* Footer */
+footer {
+    background-color: #7f1d1d;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+footer p {
+    margin: 0;
+    font-size: 15px;
+}
+
+/* Tampilan HP */
+@media (max-width: 700px) {
+    .paket-container,
+    .jadwal-container {
+        flex-direction: column;
+    }
+
+    header h1 {
+        font-size: 34px;
+    }
+
+    nav a {
+        display: inline-block;
+        margin: 6px 10px;
+    }
+}
